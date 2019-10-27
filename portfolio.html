@@ -1,10 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Bootstrap 4.3.1 -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Istvan Gercsak</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="book-reviews.html">Book reviews</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="static/cv/ISTVAN_GERCSAK_CV.pdf" target="_blank">Download my CV <i
+                        class="fas fa-download"> </i> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+
+<div class="container-fluid middle">
+    <div class="row">
+        <div class="col-sm-4 personal-info">
+            <h2 class="personal-ino-header">Personal info</h2>
+        </div>
+        <div class="col-sm-8 about-me">
+            <h2 class="about-me-header">About me</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/istvangercsak/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/IstvanGercsak" target="_blank">
+                    <i class="fab fa-github-square fa-3x"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Istvan Gercsak
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- JQuery -->
+<script src="static/js/jquery-3.4.1.min.js"></script>
+<!-- Popper.js-->
+<script src="static/js/popper-utils.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="static/js/bootstrap.min.js"></script>
 </body>
 </html>

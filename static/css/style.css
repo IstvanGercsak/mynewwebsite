@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
 .middle {
@@ -15,6 +17,19 @@ body {
     white-space: nowrap;
 }
 
+.personal-info-item{
+
+}
+
+.key {
+    font-weight: bold;
+    text-align: center;
+}
+
+.value{
+    text-align: center;
+}
+
 footer {
     background-color: #4e555b;
     color: #fafafa;
@@ -26,7 +41,7 @@ a:visited, a:link, a:active {
 
 }
 
-.fa-linkedin:hover, .fa-github-square:hover{
+.fa-linkedin:hover, .fa-github-square:hover {
     transition: all 0.5s ease-in-out;
     color: #1c7430;
 }

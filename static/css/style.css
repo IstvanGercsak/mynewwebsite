@@ -65,7 +65,7 @@ body {
 
 /*--------------------------------------------Book reviews page*/
 
-.filter-container{
+.filter-container {
     background-color: lavender;
 }
 
@@ -90,6 +90,47 @@ body {
 .articles p {
     font-size: 20px;
     padding: 5% 20px 0 20px;
+}
+
+/* ----------------------------------------Contact Form */
+
+.contact {
+    background: #9fcdff;
+}
+
+.contact-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------------Portfolio*/
+
+.portfolio-background, .portfolio-body {
+    background-color: darkcyan;
+}
+
+.portfolio {
+    text-align: center;
+    border-bottom: greenyellow 6px double;
 }
 
 /*--------------------------------------------Links*/

@@ -45,24 +45,35 @@
 </nav>
 
 
-<div class="container-fluid middle">
-    <div class="row">
-        <div class="col-sm-4 personal-info">
-            <h2 class="personal-ino-header">Personal info</h2>
-        </div>
-        <div class="col-sm-8 about-me">
-            <h2 class="about-me-header">About me</h2>
+<section class="container-fluid contact">
+    <div class="row bg-color-contact">
+        <div class="col">
+            <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+            <h5 class="uppercase text-center">Let's work together!</h5>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required/>
+                    <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
+                           required/>
+                    <input type="number" name="phonenumber" id="phonenumber" class="form-control"
+                           placeholder="Phone number..."
+                           required>
+                    <textarea rows="8" name="description" id="description" class="form-control"
+                              placeholder="Project description" required></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Footer -->
+</section>
+
 <footer class="pt-4">
-
-    <!-- Footer Elements -->
     <div class="container">
-
-        <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/istvangercsak/" target="_blank">
@@ -75,18 +86,10 @@
                 </a>
             </li>
         </ul>
-        <!-- Social buttons -->
-
     </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright: Istvan Gercsak
     </div>
-    <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
 
 <!-- JQuery -->
 <script src="static/js/jquery-3.4.1.min.js"></script>

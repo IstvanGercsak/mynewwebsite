@@ -3,22 +3,19 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
-    text-transform: uppercase;
 }
+
+/*--------------------------------------------Home page*/
 
 .middle {
     background-color: #6c757d;
     color: #fafafa;
 }
 
-.personal-ino-header, .about-me-header {
-    margin: 0;
+.personal-ino-header, .about-me-header, .carrier-header {
+    margin: 4%;
     text-align: center;
     white-space: nowrap;
-}
-
-.personal-info-item{
-
 }
 
 .key {
@@ -26,19 +23,87 @@ body {
     text-align: center;
 }
 
-.value{
+.value {
     text-align: center;
 }
+
+.portre {
+    margin: 0 auto;
+    background-image: url("../img/Istvan_Gercsak_Portre.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 460px;
+}
+
+.carrier-header {
+    text-align: center;
+}
+
+.carrier-center {
+    text-align: center;
+    border-bottom: black 3px dotted;
+    margin-bottom: 15px;
+}
+
+.carrier {
+    background-color: #ba8b00;
+}
+
+.about-me {
+    background-color: #1c7430;
+}
+
+.certified {
+    margin: 3% auto;
+    background-image: url("../img/certified.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+}
+
+/*--------------------------------------------Book reviews page*/
+
+.filter-container{
+    background-color: lavender;
+}
+
+.filter {
+    margin: 0 auto;
+}
+
+.articles-section {
+    background: lavender;
+}
+
+.align-middle {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.articles img {
+    width: 320px;
+    height: 450px;
+}
+
+.articles p {
+    font-size: 20px;
+    padding: 5% 20px 0 20px;
+}
+
+/*--------------------------------------------Links*/
+
+a:visited, a:link, a:active {
+    text-decoration: none;
+
+}
+
+/*--------------------------------------------Footer*/
 
 footer {
     background-color: #4e555b;
     color: #fafafa;
-}
-
-/* LINKS */
-a:visited, a:link, a:active {
-    text-decoration: none;
-
 }
 
 .fa-linkedin:hover, .fa-github-square:hover {

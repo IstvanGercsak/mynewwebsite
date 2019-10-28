@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Reviews</title>
+    <title>Home</title>
     <!-- Custom style -->
     <link rel="stylesheet" href="static/css/style.css">
     <!-- Bootstrap 4.3.1 -->
@@ -24,17 +24,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="book-reviews.html">Book reviews <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="book-reviews.html">Book reviews</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -47,25 +44,275 @@
     </div>
 </nav>
 
-
-<div class="container-fluid middle">
+<div class="container-fluid filter-container">
     <div class="row">
-        <div class="col-sm-4 personal-info">
-            <h2 class="personal-ino-header">Personal info</h2>
-        </div>
-        <div class="col-sm-8 about-me">
-            <h2 class="about-me-header">About me</h2>
+        <div class="col-sm8 filter">
+            <p>Filter by</p>
+            <select title="filter" name="filter" id="book-filter">
+                <option value="AgileSamurai">Agile Samurai</option>
+            </select>
         </div>
     </div>
 </div>
 
-<!-- Footer -->
+<button class="btn1" type="button">hide</button>
+<button class="btn2" type="button">show</button>
+
+<section class="articles-section">
+    <div class="container-fluid articles">
+        <div class="row professional">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src="static/img/scrum_book.jpg"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Scrum: The Art of Doing Twice the Work in Half the Time</h2>
+                <h3>By: <i>Jeff Sutherland</i></h3>
+                <p>
+                    A konyvet a Scrum egyik
+                    tars-alkotoja Jeff Sutherland irta meg. Fokozotasoan mutatja be, hogy hogyan alakult ki a
+                    Scrum,
+                    es
+                    az elet milyen teruletein lehetnek ezek hasznosak. (Nem csak a szoftverfejlesztes teruleten,
+                    hanem
+                    akar az autogyartasnal is). Mindezt a sajat elethelyzetein keresztul mutatja be. A konyv
+                    egyaltalan
+                    nem szaraz, es konnyen olvashato, konszonhetoen a jol felepitett tortenetszeru meselesnek. A
+                    Scrummal a scrum alapjaival ugy ismerkedhetunk meg ezen a konyvon keresztul, mint ahogy maga
+                    egy
+                    Epic manifesztalodik, azaz apro incrementumokkal szepen felepitve, ugy, hogy minden kis
+                    fejezet
+                    (Story)-nak van mondanivaloja, es hozzaadott erteke a vegeredmenynek. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src="static/img/Scrum_Travel_Company.jpg"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Scrum: A Pocket Guide (A Smart Travel Companion)</h2>
+                <h3>By: <i>Van Haren Publishing</i></h3>
+                <p>
+                    Rovid es nagyon tomor olvasmany. 2-3 nap alatt at lehet menni rajta ha nagyon lassan es figyelmesen
+                    olvasunk. Ebben a 100 oldalban megtalalhato minden, amit tudni kell A Scrum-rol. Ezert erdemes
+                    tobbszor elolvasni, vagy egy-egy reszt kiragadva atbeszelni azt massal. A konyv szakmailag kivallo
+                    viszont nem annyira olvasmanyos, mint amit megszokhattunk mas konyvekeseteben. Azoknak ajanlanam,
+                    akik a koritesmentes szaraz tenyekre kivancsiak a Scrummal kapcsolatban. Viszont egyedul, hasonlo
+                    tapasztalat nelkul nehezen emesztheto a konyv.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src="static/img/Agile_Samurai.jpg"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>The Agile Samurai : How Agile Masters Deliver Great Software</h2>
+                <h3>By: <i>Jonathan Rasmusson</i></h3>
+                <p>
+                    A konyv arrol szol, hogy hogyan epul fel egy agilis project. Elmagyarazza a szerzo egeszen a
+                    kezdetetol a
+                    vegeig, valamint a legmagasabb szintektol egeszet a legalacsoyabb reszet is targyalja az agilis
+                    szoftverfejlesztesnek. A konyvet mindenkeppen ajanlatos elolvsani, kulonoskeppen azoknak, akik meg
+                    nem dolgoztak
+                    ilyen kornyezetben. Tomoren, erthetoen es konnyen foldolgozhatoan irja le nekunk a szerzo a tudast
+                    amit at kell
+                    ultetnunk a gyakorlatba, ha az agilis modszert szeretnenk hasznalni.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src="static/img/backbone.jpg"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Backbone: The Modern Man's Ultimate Guide to Purpose, Passion and Power</h2>
+                <h3>By: <i>David H. Wagner</i></h3>
+                <p>
+                    A konyv egyertelmuen ferfiaknak szol. Vagy legalabbis olyan fiuknak, akik azt gondoljak, hogy
+                    ferfiak. A konyv azt mutatja be, hogy hogyan tudunk kiallni magukert, es hogyan kezeljuk a ferfi
+                    enunket. Erdemes tobbszor is elolvasni, mert tomeny es valoban hasznos informaciokkal szolgal.A
+                    konyv egyertelmuen ferfiaknak szol. Vagy legalabbis olyan fiuknak, akik azt gondoljak, hogy ferfiak.
+                    A konyv azt mutatja be, hogy hogyan tudunk kiallni magukert, es hogyan kezeljuk a ferfi enunket.
+                    Erdemes tobbszor is elolvasni, mert tomeny es valoban hasznos informaciokkal szolgal.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src="static/img/rich_dad_poor_dad.jpg"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Rich Dad Poor Dad</h2>
+                <h3>By: <i>Robert Kiyosaki</i></h3>
+                <p>
+                    Mindenkeppen erdemes tobbszor is elolvasni. Sok hasznos tanacs talalhato a konyvben. Sok gyakorlati
+                    peldat is hoz a szerzo, viszont nem erdemes keszpenznek venni minden allitasat, mivel bizonyos
+                    tanacsai pl csak az amerikai adorendszerben mukodnek. Az attitude amit probal atadni a szerzo,
+                    valoban fontos. Nagyon jo kiindulasi alap lehet azoknak akik el szeretnek kezdeni dolgozni a
+                    penzugyi tudatossagon. Ami leginkabb megmaradt a konyvbol, a “difference between assets and
+                    liability”. Az egyik csak viszi a penzt, mig a masik erteket termel.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>The Richest Man in Babylon</h2>
+                <h3>By: <i>George Samuel Clason</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Soft Skills: The Software Developer's Life Manual</h2>
+                <h3>By: <i>John Sonmez</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Start Now. Get Perfect Later.</h2>
+                <h3>By: <i>Rob Moore</i></h3>
+                <p>
+                    A konyv arra az alapfeltevesre epul, hogy akarmit is szeretnenk csinalni, kezdjunk neki azonnal,
+                    mert nagyon ritka esetben fogunk barmit is azonnal tokeletesen megcsinalni, vagy tokeletesen
+                    beepiteni a hetkoznapjainkba es a szokasainkba. Segit abban, hogy elkedzdjunk barmit, amit mindig is
+                    halogattunk es „majd holnap” megcsinaljuk. Gyakorlati tanacsokkal szolgal, hogy hogyan tudjuk
+                    elkezdeni, prioritizalni a teendoinket, es hogy hogyan ismerjuk meg magunkat jobban. Kiemelt szerepe
+                    van az idobeosztasnak, igy ha elore eltervezunk dolgokat, hogy mit mikor csinalunk meg, nem kell
+                    azon gondolkodni, hogy vajon mivel foglalkozzunk. Kapunk tanacsot a TODO vagy ahogy az iro
+                    szivesebben hivja „priority” lista elkeszitesere.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Stop Being Lazy</h2>
+                <h3>By: <i>John Sonmez</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>The Chimp Paradox</h2>
+                <h3>By: <i>Prof Steve Peters</i></h3>
+                <p>
+                    A konyv azt mutatja be nekunk, hogy az ember ket reszbol all. A tudattalan osztonlenyol, amit az
+                    evolucioval egyutt hozott magaval, valamint a tudatos emberbol. Valaszt kaphatunk a miertekre,
+                    miszerint miert viselkedunk neha ugy ahogy nem szeretnenk, megha tudjuk, hogy az nem az amit
+                    szeretnenk. Kapunk tanacsokat, hogy hogyan ismerjuk fel, hogyan keruljuk el, esetleg hogyan valjon
+                    hasznunkra a bennunk levo csimpanz osztonos viselkedes es hogyan zabolazzuk meg azt. A jo gyakrolat
+                    kovetesevel es felismeresevel hatalmas kontrollra es elonyre tehetunk szert az elet minden
+                    teruleten.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>The Power of Habit</h2>
+                <h3>By: <i>Charles Duhigg</i></h3>
+                <p>
+                    Konnyu olvasmany, es konnyen lehet vele haladni. Nagyon sok erdekes tortenetet es esettanulmanyt
+                    mutat be nekunk, amiken keresztul megprobalja elmegyarazni nekunk a szerzo, hogy a szokasok hogyan
+                    alakulnak ki, az elet mely teruletere vannak hatassal, valamint milyen eszkozok es gyakorlatokat
+                    vethetunk be annak megvaltoztatasara. Konkret receptet nem kapunk a konyvtol, viszont egy valamit
+                    igen, a remenyt, hogy lehetseges valtoztatni a szokasainkon. A konyv vegen egy 30 perces
+                    olvasmanyban ossza meg velunk a szerzo az osszegyujtott tapasztalatot. Ha ujraolvasnam ezt a konyet,
+                    elegendo csak az utolso 30 percet elolvasni.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Think and Grow Rich</h2>
+                <h3>By: <i>Napoleon Hill</i></h3>
+                <p>
+                    Nagyon erdekes konyv arrol, hogy a sikeres emberek hogyan es miert tettek szert hatalmas sikerre es
+                    mindezt hogyan tudjuk atultetni a sajat eletunkbe. Nagyon olvasmanyos, ezek mellett vannak
+                    gondolatok, amik segitenek a megszerzett tudast atultetni a gyakorlatba. Ezt a konyet is erdemes
+                    atolvasni parszor
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Sleep Smarter</h2>
+                <h3>By: <i>Shawn Stevenson</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Utopia for realist</h2>
+                <h3>By: <i>Rutger Bregman</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Homo Deus</h2>
+                <h3>By: <i>Yuval Noah Harari</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 align-middle">
+                <img src=""/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-middle">
+                <h2>Flow</h2>
+                <h3>By: <i>Mihaly Csikszentmihalyi</i></h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="pt-4">
-
-    <!-- Footer Elements -->
     <div class="container">
-
-        <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/istvangercsak/" target="_blank">
@@ -78,18 +325,10 @@
                 </a>
             </li>
         </ul>
-        <!-- Social buttons -->
-
     </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright: Istvan Gercsak
+    <div class="text-center">© 2019 Copyright: Istvan Gercsak
     </div>
-    <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
 
 <!-- JQuery -->
 <script src="static/js/jquery-3.4.1.min.js"></script>
@@ -97,5 +336,16 @@
 <script src="static/js/popper-utils.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="static/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn1").click(function () {
+            $(".professional").fadeOut();
+        });
+
+        $(".btn2").click(function () {
+            $(".professional").fadeIn();
+        });
+    });
+</script>
 </body>
 </html>

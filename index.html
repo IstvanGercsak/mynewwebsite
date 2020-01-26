@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar static-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">Istvan Gercsak</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +28,13 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" id="contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="book-reviews.html">Book reviews</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="static/cv/ISTVAN_GERCSAK_CV.pdf" target="_blank">Download my CV <i
@@ -44,135 +44,359 @@
     </div>
 </nav>
 
-
 <div class="container-fluid middle">
     <div class="row">
         <div class="col-sm-4">
-            <h2 class="personal-ino-header">Personal info</h2>
+            <h2 class="personal-ino-header"></h2>
             <div class="row">
                 <div class="col-sm-10 portre"></div>
             </div>
-            <div class="row">
-                <div class="col-5 key">
-                    <p>Name:</p>
-                </div>
-                <div class="col-7 value">
-                    <p>Istvan a Gercsak</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 key">
-                    <p>Address:</p>
-                </div>
-                <div class="col-7 value">
-                    <p>Dublin, Ireland</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 key">
-                    <p>Phone:</p>
-                </div>
-                <div class="col-7 value">
-                    <p>+3530894473833</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 key">
-                    <p>Email:</p>
-                </div>
-                <div class="col-7 value">
-                    <p>istvan.gercsak@gmail.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 carrier">
-            <h2 class="carrier-header">Work experience</h2>
-            <div class="row carrier-center">
-                <div class="col-sm-4">
-                    <p class="year">05/2019 - Present</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="place">OpenJaw Technologies - Dublin, Ireland</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="role">QA Automation Engineer</p>
-                </div>
-            </div>
-            <div class="row carrier-center">
-                <div class="col-sm-4">
-                    <p class="year">10/2017 - 03/2019</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="place">MetLife - Dublin, Ireland</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="role">Test Consultant (Contractor)</p>
-                </div>
-            </div>
-            <div class="row carrier-center">
-                <div class="col-sm-4">
-                    <p class="year">05/2016 - 08/2017</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="place">IP Systems - Budapest, Hungary</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="role">QA Engineer</p>
-                </div>
-            </div>
-            <div class="row carrier-center">
-                <div class="col-sm-4">
-                    <p class="year">01/2016 - 05/2016</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="place">Aegon Hungary Insurance - Budapest, Hungary</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="role">Junior IT Business Analyst</p>
-                </div>
-            </div>
-            <div class="row carrier-center">
-                <div class="col-sm-4">
-                    <p class="year">05/2014 - 12/2015</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="place">Aegon Hungary Insurance - Budapest, Hungary</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="role">Junior Tester</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 about-me">
-            <h2 class="about-me-header">About me</h2>
-            <p>I have more than 5 years experience in software testing. Currently learning full stack web
-                development.</p>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <div class="col-sm-7 certified"></div>
         </div>
     </div>
 </div>
+
+<section class="container-fluid" style="background: #95999c">
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <h2>ISTQB Certified</h2>
+            <img src="static/img/certified.png" alt="ISTQB">
+        </div>
+        <div class="col-lg-4">
+            <h2>Full-Stack Web Developer diploma</h2>
+            <img src="static/img/credit-rated-icon.png" alt="full-stack-web-developer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="" target="_blank">Diploma link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="static/doc/Full-Stack-Syllabus.pdf" target="_blank">Diploma syllabus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <h2>6+ years of working experience</h2>
+            <p class="six" style="font-size: 62px; font-weight: bold">6+ years in IT</p>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid portfolio">
+    <h2 class="text-center" style="margin: 60px">Web Development projects</h2>
+    <div class="row" style="color: #fafafa">
+        <div class="col-sm-4" style="background: #1e7e34">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Monkeys Official</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="font-size: 24px">Description about the prjoject bla-bla-la escription about the prjoject
+                        bla-bla-la escription
+                        about the prjoject bla-bla-la the prjoject bla-bla-la escription about th escription about the
+                        prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 text-right">
+                    <i class="fa fa-globe fa-6x"></i>
+                </div>
+                <div class="col-sm-6 text-left">
+                    <i class="fab fa-github-square fa-6x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="background: #e0a800">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>API</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Placefinder</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Description about the prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="background: #721c24">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>MySQL Database</li>
+                        <li>Heroku</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Budget Calculator</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Description about the prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="background: #b21f2d">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>Django</li>
+                        <li>Python</li>
+                        <li>Travis CI</li>
+                        <li>PostgreSQL</li>
+                        <li>Heroku</li>
+                        <li>Amazon AWS</li>
+                        <li>Stripe payment</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>E-commerce</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Description about the prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center" style="margin: 60px">Test Automation projects</h2>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Monkeys Official</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Description about the prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-3 text-left">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <h4>Stack</h4>
+                        </li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Monkeys Official</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img src="static/img/certified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Description about the prjoject bla-bla-la</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid contact">
+    <div class="row bg-color-contact">
+        <div class="col">
+            <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+            <h5 class="uppercase text-center">Let's work together!</h5>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required
+                           aria-label="name"/>
+                    <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
+                           required aria-label="email"/>
+                    <input type="number" name="phonenumber" id="phonenumber" class="form-control"
+                           placeholder="Phone number..."
+                           required aria-label="number">
+                    <textarea rows="8" name="description" id="description" class="form-control"
+                              placeholder="Project description" required aria-label="description"></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="pt-4">
     <div class="container">
         <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/istvangercsak/" target="_blank">
-                    <i class="fab fa-linkedin fa-3x"> </i>
+                    <i class="fab fa-linkedin fa-4x"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/IstvanGercsak" target="_blank">
-                    <i class="fab fa-github-square fa-3x"> </i>
+                    <i class="fab fa-github-square fa-4x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="mailto:istvan.gercsak@gmail.com?subject=Interest">
+                    <i class="fa fa-envelope-square fa-4x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://istvan-the-qa.com/blog" target="_blank">
+                    <i class="fa fa-book fa-4x"></i>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="text-center">© 2019 Copyright: Istvan Gercsak
+    <div class="text-center">© 2020 Copyright: Istvan Gercsak
     </div>
 </footer>
 
@@ -182,5 +406,17 @@
 <script src="static/js/popper-utils.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="static/js/bootstrap.min.js"></script>
+<script>
+    $("#contact").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".contact").offset().top
+        }, 2000);
+    });
+    $("#portfolio").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".portfolio").offset().top
+        }, 2000);
+    });
+</script>
 </body>
 </html>

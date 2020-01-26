@@ -6,6 +6,9 @@ body {
 }
 
 /*--------------------------------------------Home page*/
+a:hover {
+    cursor: pointer;
+}
 
 .middle {
     background-color: #6c757d;
@@ -33,7 +36,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 460px;
+    min-height: 380px;
+    min-width: 380px;
+    border-radius: 50%;
 }
 
 .carrier-header {
@@ -48,10 +53,6 @@ body {
 
 .carrier {
     background-color: #ba8b00;
-}
-
-.about-me {
-    background-color: #1c7430;
 }
 
 .certified {

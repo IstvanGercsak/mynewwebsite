@@ -6,62 +6,111 @@ body {
 }
 
 /*--------------------------------------------Home page*/
-a:hover {
-    cursor: pointer;
-}
-
-.middle {
-    background-color: #6c757d;
-    color: #fafafa;
-}
-
-.personal-ino-header, .about-me-header, .carrier-header {
+.personal-ino-header {
     margin: 4%;
     text-align: center;
     white-space: nowrap;
 }
 
-.key {
-    font-weight: bold;
-    text-align: center;
-}
-
-.value {
-    text-align: center;
-}
-
 .portre {
-    margin: 0 auto;
+    margin: 40px auto;
     background-image: url("../img/Istvan_Gercsak_Portre.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 380px;
     min-width: 380px;
-    border-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
-.carrier-header {
+.typewrite {
+    color: #fafafa;
+    font-size: 70px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.top-page {
+    background-color: #406e7b;
+    color: #fafafa;
+}
+
+.middle-page {
+    background: #4e7b32;
+}
+
+.certificate {
+    padding-bottom: 20px;
+}
+
+.six-years {
+    padding-top: 65px;
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.portfolio {
+    background-color: #0f6674;
+}
+
+.web-dev-header {
+    padding: 40px;
     text-align: center;
 }
 
-.carrier-center {
-    text-align: center;
-    border-bottom: black 3px dotted;
-    margin-bottom: 15px;
+.separate-line {
+    height: 70px;
+    background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            #4e7b32 10px,
+            #0f6674 20px
+    ),
+    linear-gradient(
+            to bottom,
+            #4e7b32,
+            #0f6674
+    );
+    border: 0;
 }
 
-.carrier {
-    background-color: #ba8b00;
+/*--------------------------------------------Portfolio page*/
+
+.portfolio-container {
+    color: #fafafa;
 }
 
-.certified {
-    margin: 3% auto;
-    background-image: url("../img/certified.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 160px;
+.portfolio-box {
+    border: 2px black solid;
+    border-radius: 10%;
+}
+
+.first-box {
+    background: #1e7e34;
+}
+
+.second-box {
+    background: #e0a800;
+}
+
+.third-box {
+    background: #721c24;
+}
+
+.fourth-box {
+    background: #b21f2d;
+}
+
+.project-description {
+    font-size: 24px;
+    text-align: justify;
 }
 
 /*--------------------------------------------Book reviews page*/
@@ -133,17 +182,6 @@ button[type="submit"] {
 
 .form-control {
     margin-bottom: 10px;
-}
-
-/*--------------------------------------------Portfolio*/
-
-.portfolio-background, .portfolio-body {
-    background-color: darkcyan;
-}
-
-.portfolio {
-    text-align: center;
-    border-bottom: greenyellow 6px double;
 }
 
 /*--------------------------------------------Links*/

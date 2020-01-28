@@ -5,6 +5,11 @@ body {
     font-size: 32px;
 }
 
+h2 {
+    font-weight: bold;
+    color: #fafafa
+}
+
 /*--------------------------------------------Home page*/
 .personal-ino-header {
     margin: 4%;
@@ -20,8 +25,8 @@ body {
     background-size: cover;
     min-height: 380px;
     min-width: 380px;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 150px;
 }
 
 .typewrite {
@@ -47,6 +52,24 @@ a:hover {
 
 .certificate {
     padding-bottom: 20px;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+.certificate a {
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.certificate a:active, .certificate a:link, .certificate a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.certificate a:hover {
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
 }
 
 .six-years {
@@ -90,6 +113,7 @@ a:hover {
 .portfolio-box {
     border: 2px black solid;
     border-radius: 10%;
+    color: #fafafa;
 }
 
 .first-box {
@@ -198,9 +222,10 @@ footer {
     color: #fafafa;
 }
 
-.fa-linkedin:hover, .fa-github-square:hover {
+.fa-linkedin:hover, .fa-github-square:hover, .fa-globe:hover, .fa-envelope-square:hover, .fa-book:hover {
     transition: all 0.5s ease-in-out;
-    color: #1c7430;
+    color: #721c24;
+    cursor: pointer;
 }
 
 .fa-linkedin {
@@ -210,5 +235,20 @@ footer {
 
 .fa-github-square {
     color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-globe {
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-envelope-square {
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-book {
+    color: #856404;
     transition: all 0.5s ease-in-out;
 }

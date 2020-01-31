@@ -33,8 +33,7 @@ h2 {
     color: #fafafa;
     font-size: 70px;
     text-align: center;
-    margin: 30px;
-    padding: 30px;
+    margin-top: 25vh;
 }
 
 a:hover {
@@ -42,18 +41,34 @@ a:hover {
 }
 
 .top-page {
-    background-color: #406e7b;
+    background-color: #17343d;
     color: #fafafa;
 }
 
 .middle-page {
-    background: #4e7b32;
+    background: #0b2e13;
+}
+
+
+.istqb-img {
+    transition: all 0.5s ease-in-out;
+}
+
+.istqb-img:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 13px 13px #4b736e;
+}
+
+.diploma-link {
+    margin-top: 10px;
 }
 
 .certificate {
     padding-bottom: 20px;
     color: #fafafa;
     font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .certificate a {
@@ -64,7 +79,7 @@ a:hover {
 
 .certificate a:active, .certificate a:link, .certificate a:visited {
     text-decoration: none;
-    color: black;
+    color: rgba(205, 67, 0, 0.79);
 }
 
 .certificate a:hover {
@@ -73,13 +88,20 @@ a:hover {
 }
 
 .six-years {
-    padding-top: 65px;
-    font-size: 62px;
+    color: #fafafa;
+    padding-top: 25px;
+    font-size: 60px;
     font-weight: bold;
 }
 
+.fa-laptop-code {
+    color: #fafafa;
+    font-size: 60px;
+}
+
 .portfolio {
-    background-color: #0f6674;
+    background-color: #17343d;
+    padding-bottom: 20px;
 }
 
 .web-dev-header {
@@ -93,13 +115,13 @@ a:hover {
             45deg,
             transparent,
             transparent 10px,
-            #4e7b32 10px,
-            #0f6674 20px
+            #0b2e13 10px,
+            #17343d 20px
     ),
     linear-gradient(
             to bottom,
-            #4e7b32,
-            #0f6674
+            #0b2e13,
+            #17343d
     );
     border: 0;
 }
@@ -111,17 +133,18 @@ a:hover {
 }
 
 .portfolio-box {
-    border: 2px black solid;
-    border-radius: 10%;
     color: #fafafa;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .first-box {
-    background: #1e7e34;
+    background: #1c5b2a;
 }
 
 .second-box {
-    background: #e0a800;
+    background: #cc9400;
 }
 
 .third-box {
@@ -129,12 +152,34 @@ a:hover {
 }
 
 .fourth-box {
-    background: #b21f2d;
+    background: #9b1f2e;
+}
+
+.stack-one {
+    background: #1e4a25;
+}
+
+.stack-two {
+    background: #a77600;
+    height: inherit;
+}
+
+.stack-three {
+    background: #54131a;
+}
+
+.stack-four {
+    background: #801f29;
 }
 
 .project-description {
     font-size: 24px;
     text-align: justify;
+}
+
+.portfolio-box:hover {
+    box-shadow: 13px 13px #4b736e;
+    transition: all 0.5s ease-in-out;
 }
 
 /*--------------------------------------------Book reviews page*/
@@ -181,7 +226,7 @@ a:hover {
 /* ----------------------------------------Contact Form */
 
 .contact {
-    background: #9fcdff;
+    background: #b38669;
 }
 
 .contact-heading {
@@ -224,7 +269,7 @@ footer {
 
 .fa-linkedin:hover, .fa-github-square:hover, .fa-globe:hover, .fa-envelope-square:hover, .fa-book:hover {
     transition: all 0.5s ease-in-out;
-    color: #721c24;
+    color: #17343d;
     cursor: pointer;
 }
 
@@ -251,4 +296,21 @@ footer {
 .fa-book {
     color: #856404;
     transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 769px) {
+    .typewrite {
+        text-align: right;
+        font-size: 60px;
+        margin-top: 15vh;
+    }
+}
+
+@media(max-width: 500px) {
+    .typewrite {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
 }

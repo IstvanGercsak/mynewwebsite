@@ -6,4 +6,4 @@ btn.addEventListener("click", function () {
         left: 0,
         behavior: "smooth"
     })
-})
+});

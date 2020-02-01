@@ -102,7 +102,6 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 separate-line">
-
         </div>
     </div>
 </div>
@@ -313,7 +312,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <h2 class="web-dev-header">Test Automation projects</h2>
     <div class="row portfolio-container">
@@ -434,6 +432,13 @@
     </div>
 </section>
 
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"
+   title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+    <span>
+        <i class="fas fa-chevron-up"></i>
+    </span>
+</a>
+
 <footer class="pt-4">
     <div class="container">
         <ul class="list-unstyled list-inline text-center">
@@ -467,11 +472,27 @@
 <script src="static/js/typeing.js"></script>
 <!-- JQuery -->
 <script src="static/js/jquery-3.4.1.min.js"></script>
-<!-- Popper.js-->
-<script src="static/js/popper-utils.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
 <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1500);
+            return false;
+        });
+    });
+
     $("#contact").click(function () {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".contact").offset().top
@@ -482,6 +503,8 @@
             scrollTop: $(".portfolio").offset().top
         }, 2000);
     });
+
+    $('#back-to-top').hide();
 </script>
 </body>
 </html>

@@ -190,6 +190,16 @@ a:hover {
     transition: all 0.5s ease-in-out;
 }
 
+.project-img img {
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.project-img i {
+    margin-top: 15px;
+}
+
 /*--------------------------------------------Book reviews page*/
 
 .filter-container {

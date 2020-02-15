@@ -31,7 +31,7 @@ h3 {
 
 .portre {
     margin: 40px auto;
-    background-image: url("../img/Istvan_Gercsak_Portre.jpg");
+    background-image: url("../img/header/Istvan_Gercsak_Portre.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,6 +291,67 @@ button[type="submit"] {
     border-radius: 50px;
 }
 
+/*--------------------------------------------Courses*/
+.dot-container {
+    margin: 10px auto;
+}
+
+.course-box {
+    background-color: navy;
+    transition: all 0.5s ease-in-out;
+    border: #6f42c1 5px solid;
+    font-size: 16px;
+    padding: 0;
+}
+
+.course-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.course-box a:hover, .course-box a:visited, .course-box a:link, .course-box a:active {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.course-box:hover {
+    background-color: #1e4a25;
+    transition: all 0.5s ease-in-out;
+}
+
+.courses {
+    background-color: #7abaff;
+    text-align: center;
+}
+
+.course-name-height {
+    height: 130px;
+}
+
+.blue-color {
+    color: navy;
+}
+
+.blue-background{
+    background-color: navy;
+}
+
+.yellow-color {
+    color: #4d4d00;
+}
+
+.yellow-background{
+    background-color: #4d4d00;
+}
+
+.red-color {
+    color: #680000
+}
+
+.red-background{
+    background-color: #680000;
+}
+
 /*--------------------------------------------Links*/
 
 a:visited, a:link, a:active {
@@ -334,6 +395,12 @@ footer {
 .fa-book {
     color: #856404;
     transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1025px) {
+    .course-name-height{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 769px) {

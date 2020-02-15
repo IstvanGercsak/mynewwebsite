@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <!-- Hover Css -->
+    <link rel="stylesheet" href="static/css/hover-min.css">
     <!-- Custom style -->
     <link rel="stylesheet" href="static/css/styles.css">
     <!-- Bootstrap 4.3.1 -->
@@ -14,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
+
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script>
         (function () {
@@ -42,6 +45,9 @@
             <!--            <li class="nav-item">-->
             <!--                <a class="nav-link" href="book-reviews.html">Book reviews</a>-->
             <!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" id="courses">Courses</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://istvan-the-qa.com/blog/" target="_blank">Blog</a>
             </li>
@@ -73,11 +79,11 @@
     <div class="row text-center">
         <div class="col-lg-4 certificate">
             <h2>ISTQB Certified</h2>
-            <img class="istqb-img" src="static/img/certified.png" alt="ISTQB">
+            <img class="istqb-img" src="static/img/header/certified.png" alt="ISTQB">
         </div>
         <div class="col-lg-4 certificate">
             <h2>Full-Stack Web Developer diploma</h2>
-            <img src="static/img/credit-rated-icon.png" alt="full-stack-web-developer">
+            <img src="static/img/header/credit-rated-icon.png" alt="full-stack-web-developer">
             <div class="row">
                 <div class="col-sm-12 diploma-link">
                     <a href="#" target="_blank">Diploma link &lt;</a>
@@ -128,7 +134,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/monkees-com-header-logo.png" alt="Monkeys Official">
+                                <img src="static/img/projects/monkees-com-header-logo.png" alt="Monkeys Official">
                             </div>
                         </div>
                         <div class="row">
@@ -177,7 +183,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/map.jpg" alt="PlaceFinder">
+                                <img src="static/img/projects/map.jpg" alt="PlaceFinder">
                             </div>
                         </div>
                         <div class="row">
@@ -236,7 +242,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/budget.jpg" alt="Budget Calculator">
+                                <img src="static/img/projects/budget.jpg" alt="Budget Calculator">
                             </div>
                         </div>
                         <div class="row">
@@ -292,7 +298,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/it-knowledge.png" alt="E-commerce">
+                                <img src="static/img/projects/it-knowledge.png" alt="E-commerce">
                             </div>
                         </div>
                         <div class="row">
@@ -345,7 +351,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/touch-logo.png" alt="touch-logo">
+                                <img src="static/img/projects/touch-logo.png" alt="touch-logo">
                             </div>
                         </div>
                         <div class="row">
@@ -387,7 +393,7 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-12 text-center project-img">
-                                <img src="static/img/smartbox-header.png" alt="Smartbox">
+                                <img src="static/img/projects/smartbox-header.png" alt="Smartbox">
                             </div>
                         </div>
                         <div class="row">
@@ -419,7 +425,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="static/img/react.png" alt="React" class="learning">
+                    <img src="static/img/currently-learning/react.png" alt="React" class="learning">
                 </div>
             </div>
         </div>
@@ -431,7 +437,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="static/img/redux.png" alt="Redux" class="learning">
+                    <img src="static/img/currently-learning/redux.png" alt="Redux" class="learning">
                 </div>
             </div>
         </div>
@@ -443,7 +449,10 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="static/img/js-with-es6.png" alt="JS-and-ES6" class="js-and-es6">
+                    <img src="static/img/currently-learning/js-with-es6.png" alt="JS-and-ES6" class="js-and-es6">
+                    <div class="certificate">
+                        <a href="#" class="diploma-link">Certificate link <</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,12 +464,122 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="static/img/nodejs.png" alt="nodejs" class="js-and-es6">
+                    <img src="static/img/currently-learning/nodejs.png" alt="nodejs" class="js-and-es6">
                 </div>
             </div>
         </div>
     </div>
+</section>
 
+<section class="container-fluid courses">
+    <h2>Finished Courses and certificates</h2>
+    <h5>(Click on the course name to check the certificate)</h5>
+    <div class="row dot-container">
+        <div class="col-sm-4"><i class="fas fa-circle fa-2x blue-color"> - Software Testing</i></div>
+        <div class="col-sm-4"><i class="fas fa-circle fa-2x yellow-color"> - Automation</i></div>
+        <div class="col-sm-4"><i class="fas fa-circle fa-2x red-color"> - Development</i></div>
+    </div>
+
+    <div class="row portfolio-container">
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box blue-background">
+            <a href="static/img/cert/ISTQB_cert.jpg" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>ISTQB - Foundation Level Certificate</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box blue-background">
+            <a href="#" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>ISTQB - Advanced Level Test Automation</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box blue-background">
+            <a href="#" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>ISTQB - Advanced Level Test Manager</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box blue-background">
+            <a href="https://www.udemy.com/certificate/UC-c1509616-bf82-4301-bd97-a9e740a07d38/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Agile Core and Beyond</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box blue-background">
+            <a href="https://www.udemy.com/certificate/UC-ffc97aa2-0b45-4082-8a10-58cae9961c8f/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Build + Deploy + Test with Jenkins 2.0</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-3XSVP7V2/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Cucumber with Selenium Java (Basic)</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-12645358-b7d4-4bbb-b313-9e2a7e088907/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Selenium WebDriver - Java, Cucumber BDD & more. Full Course!</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-c463417e-bfa8-4564-a8cb-720919a2cf10/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Robot Framework Test Automation - Level 1 ( Selenium )</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-8ac29f68-b2d4-4b1d-aab9-13a6484c034b/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Selenium WebDriver with C# for Beginners + Live Testing Site</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-6JNQELA1/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Selenium WebDriver Training with Java and Many Live Projects</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box yellow-background">
+            <a href="https://www.udemy.com/certificate/UC-ULR7YEJW/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Selenium WebDriver with Java - Basics to Advanced + Frameworks</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box red-background">
+            <a href="https://www.udemy.com/certificate/UC-4171a465-f653-4d40-8308-ef3932e294b6/" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Step By Step Java Programming Complete Course</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box red-background">
+            <a href="#" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>Full-Stack Web Developer diploma</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 sol-sm-3 col-md-2 hvr-shutter-out-horizontal course-box red-background">
+            <a href="#" target="_blank">
+                <div class="col-sm-12 course-name-height">
+                    <p>ES6 Javascript: The Complete Developer's Guide</p>
+                </div>
+            </a>
+        </div>
+    </div>
 </section>
 
 <section class="container-fluid contact">
@@ -556,9 +675,16 @@
             scrollTop: $(".contact").offset().top
         }, 2000);
     });
+
     $("#portfolio").click(function () {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".portfolio").offset().top
+        }, 2000);
+    });
+
+    $("#courses").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".courses").offset().top
         }, 2000);
     });
 

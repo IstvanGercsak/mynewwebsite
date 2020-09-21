@@ -121,23 +121,6 @@ a:hover {
     text-align: center;
 }
 
-.separate-line {
-    height: 70px;
-    background: repeating-linear-gradient(
-            45deg,
-            transparent,
-            transparent 10px,
-            #0b2e13 10px,
-            #17343d 20px
-    ),
-    linear-gradient(
-            to bottom,
-            #0b2e13,
-            #17343d
-    );
-    border: 0;
-}
-
 /*--------------------------------------------Portfolio page*/
 
 .portfolio-container {
@@ -202,93 +185,6 @@ a:hover {
 
 .project-img i {
     margin-top: 15px;
-}
-
-/*--------------------------------------------Book reviews page*/
-
-.filter-container {
-    background-color: lavender;
-}
-
-.filter {
-    margin: 0 auto;
-}
-
-.articles-section {
-    background: lavender;
-}
-
-.align-middle {
-    margin: 20px auto;
-    text-align: center;
-}
-
-.articles img {
-    width: 320px;
-    height: 450px;
-}
-
-.articles p {
-    font-size: 20px;
-    padding: 5% 20px 0 20px;
-}
-
-#btnScrollToTop {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 25px;
-    background: #e62739;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    outline: none;
-    cursor: pointer;
-}
-
-/* ----------------------------------------Contact Form */
-
-.contact {
-    background: #b38669;
-}
-
-.contact-heading {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #e84610;
-}
-
-.form-control {
-    margin-bottom: 10px;
-}
-
-
-/*--------------------------------------------Currently learning*/
-
-.learning {
-    width: 75%;
-    animation: rotation 8s infinite linear;
-    margin: 20px;
-}
-
-.js-and-es6 {
-    width: 100%;
-    margin-top: 20px;
-    height: 220px;
-    border-radius: 50px;
 }
 
 /*--------------------------------------------Courses*/
@@ -417,14 +313,5 @@ footer {
         font-size: 45px;
         margin-top: 5vh;
         margin-bottom: 5vh;
-    }
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
     }
 }

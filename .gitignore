@@ -1,5 +1,13 @@
+# Schema folder
+./static/color_schema
+
 # Idea files
 /.idea
 
 # Bluehost files
 /bluehosthtacces
+
+# HTML files in progress
+book-reviews.html
+REST_API_testing.html
+seleniumPractice.html

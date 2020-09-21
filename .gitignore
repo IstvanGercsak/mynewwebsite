@@ -11,3 +11,7 @@
 book-reviews.html
 REST_API_testing.html
 seleniumPractice.html
+.DS_Store
+static/.DS_Store
+static/img/.DS_Store
+static/img/cert/.DS_Store
